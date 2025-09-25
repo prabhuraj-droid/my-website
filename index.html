@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prabhu Raj — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Prabhu Raj — Developer, Designer, and Problem Solver." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand"><span class="logo">🤖</span> <span>Prabhu Raj</span></a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div style="display:flex; align-items:center; gap:.8rem">
+        <div class="toggle" aria-label="Theme toggle">
+          <button id="lightBtn" title="Light">☀️</button>
+          <button id="darkBtn" class="active" title="Dark">🌙</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+      </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h1 class="chip">👋 Hello! I'm <strong>Prabhu Raj</strong></h1>
+        <br>
+        <br>
+        <br>
+        <h1 class="headline">Creating Scalable, User-Friendly Web Apps</h1>
+        <p class="sub">Full‑stack developer focused on clean UI, performance, and delightful UX. I love turning ideas into polished products.</p>
+        <div style="display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.2rem">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+          <a class="btn ghost" href="https://drive.google.com/file/d/10ElzfNbQoSMbrj2k7Ef0_O2S8_oHkaAZ/view?usp=drivesdk" download>⬇️ Download Resume</a>
+        </div>
+      </div>
+      <div class="hero-card ring">
+        <img src="pj.jpg" alt="My Photo" 
+     class="w-40 h-40 rounded-full object-cover shadow-lg border-4 border-blue-500 mx-auto" style="width: 100%;border-radius: 0.5cm;">
+        <div style="display:flex; gap:.5rem; margin-top:1rem; flex-wrap:wrap">
+          <span class="chip">⚡ Performance‑first</span>
+          <span class="chip">🎨 Design‑minded</span>
+          <span class="chip">🧩 Problem Solver</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about">
+      <div class="card ring">
+        <span class="kicker">About</span>
+        <h2 class="section-title">A bit about me</h2>
+        <p style="text-align: justify;">I'm a developer who enjoys building responsive, accessible, and performant applications. I focus on modern JavaScript, Python backends, and a clean component‑driven approach. Outside code, I enjoy exploring UI motion and learning new tech.</p>
+        <p style="text-align: justify;">Currently open to full‑time roles and freelance projects. Based in India, working remotely worldwide.</p>
+      </div>
+      <div class="card">
+        <span class="kicker">Quick facts</span>
+        <ul>
+          <li>🌍 From: Tamil Nadu, India</li>
+          <li>💼 Looking for: Full‑stack / Frontend roles</li>
+          <li>🛠️ Tools: VS Code, Git/GitHub</li>
+          <li>💬 Languages: English, Tamil</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <span class="kicker">Skills</span>
+      <h2 class="section-title">What I use</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <strong>HTML & CSS</strong>
+          <div class="bar"><span style="width:95%"></span></div>
+        </div>
+        <div class="skill">
+          <strong>JavaScript</strong>
+          <div class="bar"><span style="width:88%"></span></div>
+        </div>
+        <div class="skill">
+          <strong>React</strong>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
+        <div class="skill">
+          <strong>Java</strong>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill">
+          <strong>Python</strong>
+          <div class="bar"><span style="width:80%"></span></div>
+        </div>
+        <div class="skill">
+          <strong>Node & Express</strong>
+          <div class="bar"><span style="width:78%"></span></div>
+        </div>
+        <div class="skill">
+          <strong>SQL & MongoDB</strong>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <span class="kicker">Work</span>
+      <h2 class="section-title">Featured Projects</h2>
+      <div class="projects" id="projectGrid">
+        <!-- Mass Mail Dispatcher -->
+<article class="project" tabindex="0">
+  <div class="thumb">
+    <img class="project-img" src="mmdp.png" alt="Mass Mail Dispatcher Screenshot">
+  </div>
+  <h3>Mass Mail Dispatcher</h3>
+  <p style="text-align: justify;">
+    A web-based tool that allows users to send bulk emails with personalization using templates and contact lists.
+  </p>
+  <div class="stack">
+    <span class="chip">HTML</span>
+    <span class="chip">CSS</span>
+    <span class="chip">JavaScript</span>
+  </div>
+</article>
+
+<!-- Drowsiness & Traffic Sign Detection -->
+<article class="project" tabindex="0">
+  <div class="thumb">
+    <img class="project-img" src="ddts.png" alt="Drowsiness & Traffic Sign Detection Screenshot">
+  </div>
+  <h3>Drowsiness & Traffic Sign Detection</h3>
+  <p style="text-align: justify;">
+    Combined driver monitoring and traffic sign recognition system with real-time alerts.
+  </p>
+  <div class="stack">
+    <span class="chip">OpenCV</span>
+    <span class="chip">FastAPI</span>
+    <span class="chip">Roboflow</span>
+  </div>
+</article>
+
+<!-- Portfolio Website -->
+<article class="project" tabindex="0">
+  <div class="thumb">
+    <img class="project-img" src="Portfolio.png" alt="Portfolio Website Screenshot">
+  </div>
+  <h3>Portfolio Website</h3>
+  <p style="text-align: justify;">
+    Ultra-fast, responsive portfolio with dark mode, smooth animations, and accessible components.
+  </p>
+  <div class="stack">
+    <span class="chip">HTML</span>
+    <span class="chip">CSS</span>
+    <span class="chip">JavaScript</span>
+  </div>
+</article>
+
+      </div>
+    </div>
+  </section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <span class="kicker">Contact</span>
+    <h2 class="section-title">Let’s build something great</h2>
+
+    <div class="about" style="display:flex; flex-wrap:wrap; gap:2rem;">
+      
+      <!-- Contact Form Card -->
+      <div class="card ring" style="flex:1; min-width:280px;">
+        <form action="https://formspree.io/f/mwpnrzla" method="POST">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Email address" required />
+          <textarea name="message" placeholder="Tell me about your project" rows="5" required></textarea>
+          <button type="submit" class="btn">Send message</button>
+          <form action="mailto:prabhurajveerajayasankar@gmail.com" method="POST" enctype="text/plain">
+        </form>
+      </div>
+
+      <!-- Contact Info Card -->
+      <div class="card" style="flex:1; min-width:280px;">
+        <p><strong>Email:</strong> <a href="mailto:prabhurajveerajayasankar@gmail.com">prabhurajveerajayasankar@gmail.com</a></p>
+        <p><strong>Location:</strong> Tamil Nadu, India</p>
+        <div style="display:flex; gap:.6rem; flex-wrap:wrap; margin-top:.6rem;">
+          <a class="chip" href="https://github.com/prabhuraj-droid" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="chip" href="https://www.linkedin.com/in/prabhu-raj-v-597259220" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:1rem">
+      <span>© <span id="year"></span> Prabhu Raj</span>
+      <span>Built with ♥ — <a href="#home">Back to top ↑</a></span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
