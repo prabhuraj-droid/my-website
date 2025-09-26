@@ -356,10 +356,9 @@ footer { padding: 2.2rem 0; color: var(--muted); }
   color: #0b0d15;
   font-weight: 700;
 }
-
-
-
-
-
-
-
+html[data-theme="light"] .profile-pic{
+    content: url("pjl.jpg");
+}
+html[data-theme="dark"] .profile-pic{
+    content: url("pj.jpg");
+}
