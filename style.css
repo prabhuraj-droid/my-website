@@ -122,37 +122,25 @@ a { color: inherit; text-decoration: none; }
 .nav-menu a:hover { background: var(--card); color: var(--text); }
 
 /* Mobile menu (hidden by default) */
-/* Mobile Menu */
 .mobile-menu {
-  display: none;
-  position: absolute;
-  top: 60px;             /* below navbar */
-  left: 0;
-  width: 100%;           /* full width */
-  background: var(--bg-soft);
-  padding: 0.5rem 0.8rem;
-  border-bottom: 1px solid rgba(255,255,255,.08);
-
-  display: flex;         /* horizontal */
+  display: none;           /* hidden by default */
+  flex-direction: row;     /* horizontal layout */
+  list-style: none;        /* remove bullets */
   gap: 1rem;
-  overflow-x: auto;      /* scrollable */
-  white-space: nowrap;   /* keep items in one line */
-
-  list-style: none;      /* remove bullets */
-  margin: 0;
-  padding-left: 0;
-
+  overflow-x: auto;        /* scrollable if needed */
+  padding: 0.5rem 1rem;
+  background: var(--bg-soft);
+  width: 100%;
+  position: absolute;
+  top: 60px;               /* adjust according to navbar height */
+  left: 0;
   z-index: 9999;
-  opacity: 0;
-  transform: translateY(-15px);
-  transition: all 0.3s ease;
 }
 
-/* Show when toggled */
 .mobile-menu.show {
-  opacity: 1;
-  transform: translateY(0);
+  display: flex;           /* show when toggled */
 }
+
 
 /* Mobile menu items */
 .mobile-menu li {
@@ -368,6 +356,7 @@ footer { padding: 2.2rem 0; color: var(--muted); }
   color: #0b0d15;
   font-weight: 700;
 }
+
 
 
 
