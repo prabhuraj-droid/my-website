@@ -24,6 +24,7 @@ function setLight() {
   document.documentElement.style.setProperty('--card', 'rgba(0,0,0,0.05)');
   document.documentElement.style.setProperty('--text', '#0e1220');
   document.documentElement.style.setProperty('--muted', '#4b5565');
+  document.documentElement.setAttribute("data-theme","light");
   lightBtn.classList.add('active'); darkBtn.classList.remove('active');
   localStorage.setItem('theme','light');
 }
@@ -34,6 +35,7 @@ function setDark() {
   document.documentElement.style.setProperty('--card', 'rgba(255,255,255,0.06)');
   document.documentElement.style.setProperty('--text', '#e6e9f2');
   document.documentElement.style.setProperty('--muted', '#b7bfd7');
+  document.documentElement.setAttribute("data-theme","dark");
   darkBtn.classList.add('active'); lightBtn.classList.remove('active');
   localStorage.setItem('theme','dark');
 }
@@ -61,4 +63,3 @@ if(saved === 'dark') setDark();
       card.addEventListener('focus', () => card.style.borderColor = 'var(--ring)');
       card.addEventListener('blur', () => card.style.borderColor = 'rgba(255,255,255,.08)');
     });
-
