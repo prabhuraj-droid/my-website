@@ -15,22 +15,39 @@
 <body>
   <!-- NAVBAR -->
   <nav class="nav">
-    <div class="container nav-inner">
-      <a href="#home" class="brand"><span class="logo">🤖</span> <span>Prabhu Raj</span></a>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div style="display:flex; align-items:center; gap:.8rem">
-        <div class="toggle" aria-label="Theme toggle">
-          <button id="lightBtn" title="Light">☀️</button>
-          <button id="darkBtn" class="active" title="Dark">🌙</button>
-        </div>
-        <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+  <div class="container nav-inner">
+    <!-- Logo -->
+    <a href="#home" class="brand">
+      <span class="logo">🤖</span> <span>Prabhu Raj</span>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Right Side: Theme Toggle + Hamburger -->
+    <div class="nav-right">
+      <div class="toggle" aria-label="Theme toggle">
+        <button id="lightBtn" title="Light">☀️</button>
+        <button id="darkBtn" class="active" title="Dark">🌙</button>
       </div>
-  </nav>
+      <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <ul class="mobile-menu" id="mobileMenu">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
 
   <!-- HERO -->
   <header id="home" class="hero">
