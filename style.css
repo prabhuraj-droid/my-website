@@ -1,3 +1,6 @@
+/* ========================
+   Variables & Theme
+======================== */
 :root {
   --bg: #0b0d15;
   --bg-soft: #0f1220;
@@ -14,6 +17,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #f7f8fc;
@@ -24,6 +28,10 @@
     --ring: #c7b8ff;
   }
 }
+
+/* ========================
+   Global Styles
+======================== */
 * { box-sizing: border-box; }
 html, body { height: 100%; scroll-behavior: smooth; margin: 0; }
 body {
@@ -40,6 +48,10 @@ body {
 
 a { color: inherit; text-decoration: none; }
 .container { width: min(1100px, 92%); margin-inline: auto; }
+
+/* ========================
+   Buttons & Chips
+======================== */
 .btn {
   align-items: center;
   gap: .55rem;
@@ -67,13 +79,16 @@ a { color: inherit; text-decoration: none; }
   color: var(--muted);
   border: 1px solid rgba(255,255,255,.06);
 }
+
+/* ========================
+   Navigation
+======================== */
 .nav {
   position: sticky;
   top: 0;
   z-index: 50;
   backdrop-filter: blur(8px) saturate(140%);
   background: linear-gradient(180deg, rgba(10,12,21,.8), rgba(10,12,21,.35));
-  border-bottom: 1px solid rgba(255,255,255,.08);
 }
 .nav-inner {
   display: flex;
@@ -99,50 +114,58 @@ a { color: inherit; text-decoration: none; }
 }
 /* Navbar right side */
 .nav-right { display: flex; align-items: center; gap: .8rem; }
+
 /* Desktop menu */
 .nav-menu { display: flex; gap: 1rem; list-style: none; margin: 0; padding: 0; }
 .nav-menu a { padding: .6rem .9rem; border-radius: 12px; color: var(--muted); }
 .nav-menu a:hover { background: var(--card); color: var(--text); }
+
 /* Mobile menu (hidden by default) */
 .mobile-menu {
   display: none;           /* hidden by default */
   flex-direction: row;     /* horizontal layout */
-  list-style: none;        /* remove bullets */
-  gap: 1rem;
-  overflow-x: auto;        /* scrollable if needed */
-  padding: 0.5rem 1rem;
-  background: var(--bg-soft);
+  list-style: none;
   width: 100%;
   position: absolute;
   top: 60px;               /* adjust according to navbar height */
   left: 0;
-  z-index: 9999;
+  z-index: 50;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .mobile-menu.show {
   display: flex;           /* show when toggled */
 }
+
+
 /* Mobile menu items */
 .mobile-menu li {
   display: inline-block;
 }
+
 .mobile-menu a {
   display: inline-block;
-  padding: 0.6rem 1rem;
+  padding: 1rem;
   border-radius: 12px;
-  color: var(--text);
   text-align: center;
   white-space: nowrap;
 }
+
 .mobile-menu a:hover {
   background: var(--card);
 }
+
 /* Hamburger visible on mobile */
 .hamburger { display: none; background: transparent; border: 0; color: var(--text); font-size: 1.5rem; cursor: pointer; }
+
 /* Responsive */
 @media (max-width: 640px) {
   .nav-menu { display: none; } /* hide desktop menu */
   .hamburger { display: block; } /* show hamburger */
 }
+
+
 /* ========================
    Hero Section
 ======================== */
@@ -172,17 +195,20 @@ a { color: inherit; text-decoration: none; }
   font-weight: 600;
   color: var(--muted);
 }
+
 /* ========================
    Sections
 ======================== */
 section { padding: 4rem 0; }
 .section-title { font-size: 1.9rem; margin: .2rem 0 1rem; }
 .kicker { letter-spacing: .1em; text-transform: uppercase; font-weight: 700; color: var(--brand-2); font-size: .85rem; }
+
 /* ========================
    About Section
 ======================== */
 .about { display: grid; grid-template-columns: .9fr 1.1fr; gap: 2rem; }
 .about .card { background: var(--card); border: 1px solid rgba(255,255,255,.08); border-radius: var(--radius); padding: 1.2rem; }
+
 /* ========================
    Skills
 ======================== */
@@ -190,6 +216,7 @@ section { padding: 4rem 0; }
 .skill { background: var(--card); border: 1px solid rgba(255,255,255,.08); border-radius: 16px; padding: 1rem; }
 .bar { height: 10px; background: rgba(255,255,255,.12); border-radius: 10px; overflow: hidden; }
 .bar > span { display: block; height: 100%; background: linear-gradient(90deg, var(--brand), var(--brand-2)); }
+
 /* ========================
    Projects
 ======================== */
@@ -213,6 +240,7 @@ section { padding: 4rem 0; }
 }
 .project .thumb img.project-img:hover { transform: scale(1.05); }
 .project .stack { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .8rem; }
+
 /* ========================
    Timeline
 ======================== */
@@ -238,6 +266,7 @@ section { padding: 4rem 0; }
   background: var(--brand-2);
   box-shadow: 0 0 0 3px rgba(0,212,255,.2);
 }
+
 /* ========================
    Contact Form
 ======================== */
@@ -245,16 +274,19 @@ form { display: grid; gap: .8rem; }
 input, textarea {
   width: 100%;
   padding: 1rem;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Poppins, sans-serif;
   border-radius: 10px;
   border: 1px solid rgba(255,255,255,.14);
   background: var(--bg-soft);
   color: var(--text);
 }
 textarea { min-height: 140px; }
+
 /* ========================
    Footer
 ======================== */
 footer { padding: 2.2rem 0; color: var(--muted); }
+
 /* ========================
    Responsive
 ======================== */
@@ -271,16 +303,17 @@ footer { padding: 2.2rem 0; color: var(--muted); }
   .mobile-menu {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 55px;
     right: 0;
     left: 0;
-    background: var(--bg-soft);
-    border-bottom: 1px solid rgba(255,255,255,.08);
-    padding: 1rem;
+    padding: 0.5rem 5rem;
+    backdrop-filter: blur(8px) saturate(140%);
+    background: linear-gradient(180deg, rgba(10, 12, 21, .35), rgba(10, 12, 21, .35));
   }
   .mobile-menu a { display: block; padding: .8rem 1rem; border-radius: 12px; }
-  .mobile-menu a:hover { background: var(--card); }
+  .mobile-menu a:hover { background: var(--card);color: var(--text); }
 }
+
 /* ========================
    Fancy Rings & Toggle
 ======================== */
