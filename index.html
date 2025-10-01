@@ -3,12 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prabhu Raj — Portfolio</title>
+  <title>Portfolio</title>
   <meta name="description" content="Personal portfolio of Prabhu Raj — Developer, Designer, and Problem Solver." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🚀</text></svg>">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,6 +20,7 @@
     <a href="#home" class="brand">
       <span class="logo">🤖</span> <span>Prabhu Raj V</span>
     </a>
+
     <!-- Desktop Menu -->
     <ul class="nav-menu">
       <li><a href="#about">About</a></li>
@@ -26,6 +28,7 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+
     <!-- Right Side: Theme Toggle + Hamburger -->
     <div class="nav-right">
       <div class="toggle" aria-label="Theme toggle">
@@ -48,11 +51,8 @@
   <header id="home" class="hero">
     <div class="container hero-grid">
       <div>
-        <h1 class="chip">👋 Hello! I'm <strong>Prabhu Raj V</strong></h1>
-        <br>
-        <br>
-        <br>
-        <h1 class="headline">Creating Scalable, User-Friendly Web Apps</h1>
+        <h5 class="headline">Hi! I'm <strong style="color: rgb(53, 157, 255);">Prabhu Raj V</strong></h5>
+        <h2 class="headline">Creating Scalable, User-Friendly Web Apps</h2>
         <p class="sub">Full‑stack developer focused on clean UI, performance, and delightful UX. I love turning ideas into polished products.</p>
         <div style="display:flex; gap:.8rem; flex-wrap:wrap; margin-top:1.2rem">
           <a class="btn" href="#projects">View Projects</a>
@@ -77,8 +77,8 @@
       <div class="card ring">
         <span class="kicker">About</span>
         <h2 class="section-title">A bit about me</h2>
-        <p>I'm a developer who enjoys building responsive, accessible, and performant applications. I focus on modern JavaScript, Python backends, and a clean component‑driven approach. Outside code, I enjoy exploring UI motion and learning new tech.</p>
-        <p>Currently open to full‑time roles and freelance projects. Based in India, working remotely worldwide.</p>
+        <p style="text-align: justify;">I'm a developer who enjoys building responsive, accessible, and performant applications. I focus on modern JavaScript, Python backends, and a clean component‑driven approach. Outside code, I enjoy exploring UI motion and learning new tech.</p>
+        <p style="text-align: justify;">Currently open to full‑time roles and freelance projects. Based in India, working remotely worldwide.</p>
       </div>
       <div class="card">
         <span class="kicker">Quick facts</span>
@@ -140,7 +140,7 @@
     <img class="project-img" src="mmdp.png" alt="Mass Mail Dispatcher Screenshot">
   </div>
   <h3>Mass Mail Dispatcher</h3>
-  <p>
+  <p style="text-align: justify;">
     A web-based tool that allows users to send bulk emails with personalization using templates and contact lists.
   </p>
   <div class="stack">
@@ -155,7 +155,7 @@
     <img class="project-img" src="ddts.png" alt="Drowsiness & Traffic Sign Detection Screenshot">
   </div>
   <h3>Drowsiness & Traffic Sign Detection</h3>
-  <p>
+  <p style="text-align: justify;">
     Combined driver monitoring and traffic sign recognition system with real-time alerts.
   </p>
   <div class="stack">
@@ -170,7 +170,7 @@
     <img class="project-img" src="Portfolio.png" alt="Portfolio Website Screenshot">
   </div>
   <h3>Portfolio Website</h3>
-  <p>
+  <p style="text-align: justify;">
     Ultra-fast, responsive portfolio with dark mode, smooth animations, and accessible components.
   </p>
   <div class="stack">
@@ -193,8 +193,8 @@
         <form action="https://formspree.io/f/mwpnrzla" method="POST">
           <input type="text" name="name" placeholder="Your name" required />
           <input type="email" name="email" placeholder="Email address" required />
-          <textarea name="message" placeholder="Tell me about your project" rows="5" required></textarea>
-          <button type="submit" class="btn">Send message</button>
+          <textarea name="message" placeholder="Message Me" rows="5" required /></textarea>
+          <button type="submit" class="btn">Send</button>
           <form action="mailto:prabhurajveerajayasankar@gmail.com" method="POST" enctype="text/plain">
         </form>
       </div>
@@ -219,4 +219,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
