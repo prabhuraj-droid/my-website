@@ -22,8 +22,8 @@ function setLight() {
   document.documentElement.style.setProperty('--bg', '#f7f8fc');
   document.documentElement.style.setProperty('--bg-soft', '#ffffff');
   document.documentElement.style.setProperty('--card', 'rgba(0,0,0,0.05)');
-  document.documentElement.style.setProperty('--text', '#0e1220');
-  document.documentElement.style.setProperty('--muted', '#4b5565');
+  document.documentElement.style.setProperty('--text', '#000000ff');
+  document.documentElement.style.setProperty('--muted', '#000000ff');
   document.documentElement.setAttribute("data-theme","light");
   lightBtn.classList.add('active'); darkBtn.classList.remove('active');
   localStorage.setItem('theme','light');
@@ -34,7 +34,7 @@ function setDark() {
   document.documentElement.style.setProperty('--bg-soft', '#0f1220');
   document.documentElement.style.setProperty('--card', 'rgba(255,255,255,0.06)');
   document.documentElement.style.setProperty('--text', '#e6e9f2');
-  document.documentElement.style.setProperty('--muted', '#b7bfd7');
+  document.documentElement.style.setProperty('--muted', '#ffffffff');
   document.documentElement.setAttribute("data-theme","dark");
   darkBtn.classList.add('active'); lightBtn.classList.remove('active');
   localStorage.setItem('theme','dark');
